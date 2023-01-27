@@ -14,8 +14,7 @@ body {
 small,
 h3,
 p,
-img,
-i {
+img {
   margin-top: 2%;
 }
 .container {
@@ -71,6 +70,66 @@ i {
   transform-origin: top left;
 }
 
+nav {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  z-index: 1;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 30px;
+}
+
+nav ul li {
+  text-transform: uppercase;
+  color: #fafafa;
+  margin: 40px 0;
+  transform: translateX(-200%);
+  transition: transform 0.3s ease-in;
+  cursor: pointer;
+}
+
+nav ul li i {
+  font-size: 20px;
+}
+
+nav ul li i span {
+  margin-left: 10px;
+}
+
+nav ul li + li {
+  margin-left: 15px;
+}
+
+nav ul li + li + li {
+  margin-left: 30px;
+}
+
 .content img {
   max-width: 100%;
 }
+
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+small {
+  color: #555;
+  font-style: italic;
+}
+
+p {
+  color: #333;
+  line-height: 1.5;
+}
+
+/* .container.show-nav + .circle-container {
+  transform: rotate(-90deg);
+}
+
+.container.show-nav ~ nav li {
+  transform: translate(0);
+} */
